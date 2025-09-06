@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- own css starts -->
+     <link rel="stylesheet" href="./css/style.css">
+     <link rel="stylesheet" href="./css/font.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- own css ends -->
+     <!-- bootstrap css starts -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- bootstrap css ends  -->
+
+    
+          <!-- username button function -->
+       
+       <script>
+           function fun()
+           {
+            var nm=document.getElementById("usernm").value;
+            var lc=document.getElementById("loc").value;
+            alert("Hello Mr."+nm +"welcome to ZOMATO world,your location is"+lc);
+           }
+        </script>
+        <!-- username button function -->
+
+        <!-- Veg-Nonveg function -->
+         <script>
+          
+          </script>
+
+
+          <script>
+          function fun2()
+          {
+            
+            var rd1=document.getElementById("rd1");
+            var rd2=document.getElementById("rd2");
+            
+          
+            if(rd2.checked==true)
+          {
+            alert("your order is "+rd2.value+" thank u for choosing us");
+          }  
+         else if(rd1.chcked==true)
+          {
+            alert("your order is "+rd1.value+" thank u for choosing us");
+          }
+          
+          else
+          {
+            alert("please select your choice");
+          }
+          }
+       </script>
+         <!-- Veg-Nonveg function -->
+ 
+    
+</head>
+<body>
+  <a href="toggle mode form.html"></a>
+  <div class="container-fluid">
+    <!-- Nav Bar starts -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-page">
+        <div class="container-fluid">
+
+                 <a class="navbar-brand" href="#"><img class="logo" src=./images1/logo.png></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active format" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link format" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link format" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link format " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- Nav Bar ends -->
+    </div>
+    
+
+     <!-- heading section -->
+     
+     <section class="heading-section">
+      <div class="panel-bg text-center p-3">
+        <h4 class=" big-text typewriter" >HI,Welcome to <span class="text-red">Zomato</span></h4>
+
+          
+      </div>
+    </section>  
+  
+      <!-- heading section ends -->.
+      
+      <!-- username section -->
+      <section class="container-fluid user ">
+        
+        
+        <section class="left">
+          <div class="typewriter2">
+            <input id="usernm" class="username "  type="username" placeholder="username">
+         <input id="loc" class="location" type="location" placeholder ="your location"> 
+        <button class="login-btn" id="btn" onclick="fun()">login</button>
+          </div>
+        </section>
+
+        
+        <section class="right">
+         <div class="search_bar">
+           <input id="usernm" class="username1 typewriter2" type="username"placeholder="search your food">
+           
+         </div>
+        </section>    
+          
+        </section>
+       
+       <!-- username section -->
+
+       <!-- picture section -->
+        <div class="container-fluid typewriter1" >
+
+          <img class="biri h-2" src="./images1/burger.png">
+            <img class="bur h-2" src="./images1/biriyani.png">
+            <img class="biri h-2" src="./images1/fried rice.png">
+            <img class="biri h-2" src="./images1/momo.png">
+            <img class="biri h-2" src="./images1/pizza.png">
+            <img class="biri h-2" src="./images1/panner.png">
+            <img class="biri h-2" src="./images1/rolls.png">
+            
+
+        </div>
+          
+       <!-- picture section ends -->
+
+        <!-- veg-nonveg section -->
+         <div class="container-fluid">
+          <select class="selection" id="selection">
+            
+            <option value="Non-Veg">Non-Veg</option>
+
+          </select>
+          <button id="btn" class="b-1" type="button" >schedule</button>
+          <button id="btn" class="b-1" type="button" >under 200</button>
+          <button id="btn" class="b-1" type="button" >filter</button>
+          <button id="btn" class="b-1" type="button" >rating 4.0+</button>
+          <button id="btn" class="b-1" type="button" >under 30 min</button>
+          <button id="btn" class="b-2" type="button" >special offers</button>
+          <button id="btn" class="b-21" type="button" >VEG</button>
+          <div class="menu">
+          <input id="rd1" type="radio" name="gr1" value="chicken biriyani">chicken biriyani<br>
+          <input id="rd2" type="radio" name="gr1" value="chicken chap">chicken chap<br>
+          
+          <div class="s-btn"><button id="btn" class="select-btn" onclick="fun2()">select</button></div>
+          </div>
+          
+          
+         </div>
+        <!-- veg-nonveg section ends  -->
+
+        <!--carousel image-->
+        <div class="container-fluid c-image swiper">
+          <div class="slider-wrapper">
+            <div class="food-list swiper-wrapper">
+              <div class="food-item swiper-slide">
+                <img src="./images1/biriyani-c.png" alt="food Image" class="food-image">
+                <h2 class="food-name">special Burger</h2>
+                <p class="food-profession"> Burger King</p>
+                <button class="oder-button">order now</button>
+              </div>
+
+              <div class="food-item swiper-slide">
+                <img src="./images1/chowmin-c.jpg" alt="food Image" class="food-image">
+                <h2 class="food-name">Chowmin China</h2>
+                <p class="food-profession">China Town</p>
+                <button class="oder-button">order now</button>
+              </div>
+
+              <div class="food-item swiper-slide">
+                <img src="./images1/dosa.png" alt="food Image" class="food-image">
+                <h2 class="food-name">Dosa Do Masala</h2>
+                <p class="food-profession">Haldiram</p>
+                <button class="oder-button">order now</button>
+              </div>
+
+              <div class="food-item swiper-slide">
+                <img src="./images1/friedrice-c.png" alt="food Image" class="food-image">
+                <h2 class="food-name">friedrice-chilichicken</h2>
+                <p class="food-profession">Chowman</p>
+                <button class="oder-button">order now</button>
+              </div>
+
+              <div class="food-item swiper-slide">
+                <img src="./images1/taco.png" alt="food Image" class="food-image">
+                <h2 class="food-name">Special Taco</h2>
+                <p class="food-profession">Texas</p>
+                <button class="oder-button">order now</button>
+              </div>
+
+              <div class="food-item swiper-slide">
+                <img src="./images1/panner-c.png" alt="food Image" class="food-image">
+                <h2 class="food-name">Paneer Pasinda</h2>
+                <p class="food-profession">Tero-Parbon</p>
+                <button class="oder-button">order now</button>
+              </div>
+
+              <div class="food-item swiper-slide">
+                <img src="./images1/pizza.png" alt="food Image" class="food-image">
+                <h2 class="food-name">Pizza</h2>
+                <p class="food-profession">Dominos</p>
+                <button class="oder-button">order now</button>
+              </div>
+
+              <div class="food-item swiper-slide">
+                <img src="./images1/p4.jpg" alt="food Image" class="food-image">
+                <h2 class="food-name">paratha</h2>
+                <p class="food-profession">Sher-E-Punjab</p>
+                <button class="oder-button">order now</button>
+              </div>
+
+            </div>
+            <div class=" swiper-pagination"></div>
+            <div class=" swiper-slider-button swiper-button-prev"></div>
+            <div class=" swiper-slider-button swiper-button-next"></div>
+          </div>
+        </div>
+        <!--carousel image-->
+
+
+        <!-- card section -->
+        <p class="container-fluid h3">30 resturants delivering to you</p> 
+        <p class="container-fluid h3">Featured</p>
+        <section class="container container-fluid">
+          <div class="card">
+            <div class="img p1">
+              <img class="img1" src="./images1/p1.jpg">
+            </div>
+            
+            <h3 id="f1">Dada Boudi</h3> <div id="bg"> <button class="rate" type="buttton">4.3*</button></div> 
+            <p class="discount"><b>upto 40% off</b></p>
+            <a class="order" href="">order now</a>
+          </div>
+        </section>      
+
+        <section class="container">
+          <div class="card">
+            <div class="img p2">
+              <img class="img1" src="./images1/p2.jpg">
+            </div>
+            
+            <h3 id="f1">Pizza Hut</h3> <div id="bg"> <button class="rate" type="buttton">3.9*</button></div> 
+            <p class="discount"><b>upto 20% off</b></p>
+            <a class="order" href="">order now</a>
+          </div>
+        </section>      
+
+        <section class="container">
+          <div class="card">
+            <div class="img p3">
+              <img class="img1" src="./images1/p3.jpg">
+            </div>
+            
+            <h3 id="f1">Wow Momo!</h3> <div id="bg"> 
+            <button class="rate" type="buttton">4.1*</button></div> 
+            <p class="discount"><b>upto 30% off</b></p>
+            <a class="order" href="">order now</a>
+          </div>
+        </section>      
+
+        <section class="container">
+          <div class="card">
+            <div class="img p4">
+              <img class="img1" src="./images1/p4.jpg">
+            </div>
+            
+            <h3 id="f1">Blue Star</h3> <div id="bg"> <button class="rate" type="buttton">4.6*</button></div> 
+            <p class="discount"><b>upto 28% off</b></p>
+            <a class="order" href="">order now</a>
+          </div>
+        </section>      
+
+        
+        <!-- card section ends -->
+
+
+        <!--food offers carousel-->
+
+        <div class="container-fluid c-image-f swiper">
+          <div class="slider-wrapper">
+            <div class="food-list swiper-wrapper">
+              <div class="food-item-f swiper-slide">
+                <img src="./images1/f6.jpeg" alt="food Image" class="food-image1">
+                
+              </div>
+
+              <div class="food-item swiper-slide">
+                <img src="./images1/f1.jpeg" alt="food Image" class="food-image1">
+               
+              </div>
+
+              <div class="food-item swiper-slide">
+                <img src="./images1/f2.jpeg" alt="food Image" class="food-image1">
+                
+              </div>
+
+              <div class="food-item swiper-slide">
+                <img src="./images1/f3.jpeg" alt="food Image" class="food-image1">
+                
+              </div>
+
+              <div class="food-item swiper-slide">
+                <img src="./images1/f5.jpeg" alt="food Image" class="food-image1">
+                
+              </div>
+
+              <div class="food-item swiper-slide ">
+                <img src="./images1/f4.jpg" alt="food Image" class="food-image1">
+              </div>
+
+              
+            </div>
+            <div class=" swiper-pagination"></div>
+            <div class=" swiper-slider-button swiper-button-prev"></div>
+            <div class=" swiper-slider-button swiper-button-next"></div>
+          </div>
+        </div>
+
+        <!--food offers carousel-->
+
+      <!-- more about us-->  
+
+      <div> <button class=" h2 more"> more about us </button></div>
+
+      <section class="container container-fluid ">
+      <div class="card-1">
+       <h1 class="c1"> 350+ </h1> 
+       <h2 class="c1">resturant we are offering from your city ,we are always in your serve...</h2>  
+      </div>
+
+      <div class="card-2">
+        <h1 class="c1"> why choose us??? </h1> 
+       
+        <li class="h4 padding-left:10px c1">fresh food </li>
+        <li class="h4 padding-left:10px c1"> 24/7 service</li>
+        <li class="h4 padding-left:10px c1"> Delivered with care</li>
+        
+         
+
+      </div>
+
+           
+        </section>
+
+        <section class="container container-fluid ">
+      <div class="card-1">
+       <h1 class="c1"> Non-Veg</h1>    
+       <h2 class="c1">we are here to deliver you the authentic pure non-veg items..</h2>
+      </div>
+
+      <div class="card-2">
+            <h1 class="c1">15+</h1>
+            <h2 class="c1"> years we are offering you the taste from all over the country...</h2>
+      </div>
+
+           
+        </section>
+
+
+      <!-- more about us-->  
+
+      <!--review section-->
+      <div> <button class=" h2 more">  customers review </button></div>
+
+
+           <div class="container-fluid c-image-r swiper">
+          <div class="slider-wrapper">
+            <div class="food-list swiper-wrapper">
+              <div class="r-item swiper-slide">
+                <img src="./images1/r-1.jpeg" alt="food Image" class="r-image">
+               <div><img src="./images1/star-4.png"  class="star"></div>
+               <h5 class="review"> "i had ordered from this app and had a great food from there. there are extensive food choice. about the taste of the food is very fantastic.overall the experience was quite good and the delivery was also so quick...."</h5>
+               
+                
+              </div>
+
+              <div class="food-item swiper-slide">
+                <img src="./images1/r-3.jpeg" alt="food Image" class="r-image">
+                <div> <img src="./images1/star-2.png"  class="star"></div>
+                <h5 class="review"> "Amazing app with great food. delicious items and great service. delivery boys are so gentle and friendly. we will recomend this app at any time..."</h5>
+                
+              </div>
+
+              <div class="food-item swiper-slide">
+                <img src="./images1/r-2.jpeg" alt="food Image" class="r-image">
+                <div> <img src="./images1/star-2.png"  class="star"></div>
+                <h5 class="review">"Customer service is great and extremely welcoming,the food came out fast and the best part of all..IT WAS DELICIOUS!! definetly recommended 10/10..."</h5>
+
+              </div>
+
+              <div class="food-item swiper-slide">
+                <img src="./images1/r-4.jpeg" alt="food Image" class="r-image">
+                <div> <img src="./images1/star-4.png"  class="star"></div>
+                <h5 class="review"> "They have just launched a new non-veg scheme , being a vegeterian this approach is very admirable. i have ordered few times from here and i am nevrer disappointed. really an amazing app..."</h5>
+                
+              </div>
+
+              
+
+             
+
+            </div>
+            <div class=" swiper-pagination"></div>
+            <div class=" swiper-slider-button swiper-button-prev"></div>
+            <div class=" swiper-slider-button swiper-button-next"></div>
+          </div>
+        </div>
+
+      <!--review section-->
+
+
+
+
+        <!--footer section starts  -->
+       <section class="container container-fluid con">
+        
+        
+        <section class="about ">
+          
+          
+            <div>
+              <h1 class="tl"> About Zomato: </h1>
+          <p class="h3  c2">who are we </p>
+          <p class="h3  c2">blog </p>
+          <p class="h3  c2">work with us </p>
+          <p class="h3  c2">investor relations</p>
+          <p class="h3  c2">report fraud</p>
+          <p class="h3  c2">press kit</p>
+          <p class="h3  c2">contact us</p>
+        
+            </div>
+
+          
+        </section>
+
+        <section class="about1">
+          <div >
+            <h1 class="tl"> contact us: </h1>
+          <p class="h3 c2">Help & support  </p>
+          <p class="h3  c2"> Partner with us </p>
+          <p class="h3  c2">Ride with us</p>
+          
+          </div>
+        </section>
+
+
+
+        <section class="about">
+          
+        <div>
+            <h1 class="tl"> Legal: </h1>
+            <p class="h3 c2">Terms & condition </p>
+            <p class="h3 c2">cookie policy</p>
+            <p class="h3 c2">privacy policy</p>
+            <p class="h3 c2">investor policy</p>
+        </div>
+          
+        </section>
+
+        <section class="about1">
+          <div>
+            <h1 class="tl"> Avaiable in: </h1>
+            <p class="h3 c2">bangalore </p>
+            <p class="h3 c2">Kolkta</p>
+            <p class="h3 c2">Mumbai</p>
+            <p class="h3 c2">Delhi</p>
+        </div>
+        </section>
+
+        <section>
+          
+         <section class="about">
+            <div>
+            <h1 class="tl"> For Resturants: </h1>
+            <p class="h3 c2">Partner with us </p>
+            <p class="h3 c2">Apps for u</p>
+            </div>
+          </section>
+        </section>
+        
+        <section class="about1">
+          <div>
+            <h1 class="tl"> Social Links: </h1>
+            <img src="./images1/whatsapp.png" alt="" class="sl"><img src="./images1/twitter.png" alt="" class="sl"><img src="./images1/insta1.png" alt="" class="sl"><img src="./images1/facebook.png" alt="" class="sl">
+            
+        </div>
+        </section>
+
+       
+
+       </section>
+        
+        <!-- footer section ends -->
+
+        <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <!-- bootstap js ends -->
+
+      <!--  swiperjs script--> 
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- swiperjs script-->  
+
+    <!-- linking script js -->
+     <script src="script.js"></script>
+    <!-- linking script js -->
+    
+</body>
+</html>
